@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skytracker.Api", "src\Services\Skytracker.Api\Skytracker.Api.csproj", "{5D72FAB1-0AE7-4693-948C-AE25E919E2E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skytracker.Application", "src\Services\Skytracker.Application\Skytracker.Application.csproj", "{C0DBB3C4-70ED-4A27-9F08-4C1451135219}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skytracker.Domain", "src\Services\Skytracker.Domain\Skytracker.Domain.csproj", "{F56F3C01-657C-41D3-B49C-C35A47DB9758}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skytracker.Infrastructure", "src\Services\Skytracker.Infrastructure\Skytracker.Infrastructure.csproj", "{9648549C-A432-413A-AD7F-BEC87DD8CBF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{24BCBCEF-CDBB-4C8C-BAF1-B24D0A6FE47C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F90A280E-29F0-430D-A8C8-5444BD3FE57F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPart.Api", "src\Shared\BuilderPart.Api\BuilderPart.Api.csproj", "{F945D0F3-3B47-44C9-9D5D-383DBC695A2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D72FAB1-0AE7-4693-948C-AE25E919E2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D72FAB1-0AE7-4693-948C-AE25E919E2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D72FAB1-0AE7-4693-948C-AE25E919E2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D72FAB1-0AE7-4693-948C-AE25E919E2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DBB3C4-70ED-4A27-9F08-4C1451135219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DBB3C4-70ED-4A27-9F08-4C1451135219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DBB3C4-70ED-4A27-9F08-4C1451135219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DBB3C4-70ED-4A27-9F08-4C1451135219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56F3C01-657C-41D3-B49C-C35A47DB9758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56F3C01-657C-41D3-B49C-C35A47DB9758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56F3C01-657C-41D3-B49C-C35A47DB9758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56F3C01-657C-41D3-B49C-C35A47DB9758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9648549C-A432-413A-AD7F-BEC87DD8CBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9648549C-A432-413A-AD7F-BEC87DD8CBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9648549C-A432-413A-AD7F-BEC87DD8CBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9648549C-A432-413A-AD7F-BEC87DD8CBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F945D0F3-3B47-44C9-9D5D-383DBC695A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F945D0F3-3B47-44C9-9D5D-383DBC695A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F945D0F3-3B47-44C9-9D5D-383DBC695A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F945D0F3-3B47-44C9-9D5D-383DBC695A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D72FAB1-0AE7-4693-948C-AE25E919E2E4} = {F90A280E-29F0-430D-A8C8-5444BD3FE57F}
+		{C0DBB3C4-70ED-4A27-9F08-4C1451135219} = {F90A280E-29F0-430D-A8C8-5444BD3FE57F}
+		{F56F3C01-657C-41D3-B49C-C35A47DB9758} = {F90A280E-29F0-430D-A8C8-5444BD3FE57F}
+		{9648549C-A432-413A-AD7F-BEC87DD8CBF7} = {F90A280E-29F0-430D-A8C8-5444BD3FE57F}
+		{F945D0F3-3B47-44C9-9D5D-383DBC695A2F} = {24BCBCEF-CDBB-4C8C-BAF1-B24D0A6FE47C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2A7B9D9-16F5-42F6-93B2-8344A57C79E7}
+	EndGlobalSection
+EndGlobal
