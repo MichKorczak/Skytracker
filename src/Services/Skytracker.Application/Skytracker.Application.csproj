@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuilderPart.Application\BuilderPart.Application.csproj" />
+    <ProjectReference Include="..\Skytracker.Domain\Skytracker.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
