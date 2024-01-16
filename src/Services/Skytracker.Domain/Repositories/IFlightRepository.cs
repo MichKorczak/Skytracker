@@ -1,10 +1,9 @@
 ﻿using BuilderPart.Domain.Specification;
 using Skytracker.Domain.Entities;
 
-namespace Skytracker.Domain.Repositories
+namespace Skytracker.Domain.Repositories;
+
+public interface IFlightRepository
 {
-    public interface IFlightRepository
-    {
-        Task<IEnumerable<Flight>> GetFlightsAsync(Specification<Flight> specification);
-    }
+    Task<IEnumerable<Flight>> GetFlightsAsync(Specification<Flight> specification);
 }

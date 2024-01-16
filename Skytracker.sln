@@ -17,9 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPart.Api", "src\Shared\BuilderPart.Api\BuilderPart.Api.csproj", "{F945D0F3-3B47-44C9-9D5D-383DBC695A2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPart.Application", "BuilderPart.Application\BuilderPart.Application.csproj", "{A0B7E8D9-210E-46BC-9843-2EDD38BD0D7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPart.Application", "src\Shared\BuilderPart.Application\BuilderPart.Application.csproj", "{A0B7E8D9-210E-46BC-9843-2EDD38BD0D7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPart.Domain", "BuilderPart.Domain\BuilderPart.Domain.csproj", "{38A65ED1-F721-43DC-94BA-50F2890E0522}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPart.Domain", "src\Shared\BuilderPart.Domain\BuilderPart.Domain.csproj", "{38A65ED1-F721-43DC-94BA-50F2890E0522}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

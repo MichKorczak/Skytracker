@@ -1,4 +1,6 @@
-using Microsoft.Extensions.Options;
+using Skytracker.Api;
+using Skytracker.Application;
+using Skytracker.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,10 @@ builder.Services.AddVersionedApiExplorer(
         opt.GroupNameFormat = "'v'VVV";
         opt.SubstituteApiVersionInUrl = true;
     });
+
+builder.Services.AddApi();
+builder.Services.AddInfrastructure();
+builder.Services.AddApplication();
 
 var app = builder.Build();
 

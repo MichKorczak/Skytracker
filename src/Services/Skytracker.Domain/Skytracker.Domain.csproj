@@ -6,8 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\BuilderPart.Domain\BuilderPart.Domain.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="ErrorOr" Version="1.9.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Shared\BuilderPart.Domain\BuilderPart.Domain.csproj" />
+	</ItemGroup>
 
 </Project>

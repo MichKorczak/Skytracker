@@ -2,7 +2,7 @@
 
 namespace BuilderPart.Application.Mediator;
 
-internal class MediatRBus : IBus
+public class MediatRBus : IBus
 {
     private readonly IMediator _mediator;
 

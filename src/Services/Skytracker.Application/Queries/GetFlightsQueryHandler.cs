@@ -1,26 +1,26 @@
 ﻿using BuilderPart.Application.Mediator;
+using MapsterMapper;
 using Skytracker.Domain.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Skytracker.Domain.Specifications;
 
-namespace Skytracker.Application.Queries
+namespace Skytracker.Application.Queries;
+
+public class GetFlightsQueryHandler : IQueryHandler<GetFlightsQuery, IEnumerable<GetFlightsResponse>>
 {
-    internal class GetFlightsQueryHandler : IQueryHandler<GetFlightsQuery, IEnumerable<GetFlightsResponse>>
+    private readonly IFlightRepository _repository;
+    private readonly IMapper _mapper;
+
+    public GetFlightsQueryHandler(IFlightRepository repository, IMapper mapper)
     {
-        private readonly IFlightRepository _repository;
+        _repository = repository;
+        _mapper = mapper;
+    }
 
-        public GetFlightsQueryHandler(IFlightRepository repository)
-        {
-            _repository = repository;
-        }
+    public async Task<IEnumerable<GetFlightsResponse>> Handle(GetFlightsQuery request, CancellationToken cancellationToken)
+    {
+        var specification = new FlightDestinationSpecification(request.To);
+        var response = await _repository.GetFlightsAsync(specification);
 
-        public async Task<IEnumerable<GetFlightsResponse>> Handle(GetFlightsQuery request, CancellationToken cancellationToken)
-        {
-            return await _repository.GetFlightsAsync(new spec);
-
-        }
+        return _mapper.Map<IEnumerable<GetFlightsResponse>>(response);
     }
 }
